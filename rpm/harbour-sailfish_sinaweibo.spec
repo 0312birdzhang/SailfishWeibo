@@ -6,10 +6,6 @@
 Name:       harbour-sailfish_sinaweibo
 
 # >> macros
-# %define __provides_exclude_from ^%{_datadir}/.*$
-# list here all the libraries your RPM installs
-%define __requires_exclude libcss_parser_pp.*$|libcss_parser.*$|libhtmlcxx.*$
-
 # << macros
 
 %{!?qtc_qmake:%define qtc_qmake %qmake}
@@ -28,11 +24,14 @@ Requires:   sailfishsilica-qt5 >= 0.10.9
 Requires:   qt5-qtsvg-plugin-imageformat-svg
 Requires:   qt5-plugin-imageformat-gif
 Requires:   qt5-qtsvg
+Requires:   htmlcxx
 BuildRequires:  pkgconfig(sailfishapp) >= 1.0.2
 BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Qml)
 BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  desktop-file-utils
+BuildRequires:   htmlcxx
+BuildRequires:   htmlcxx-devel
 
 %description
 A native SinaWeibo for Sailfish OS

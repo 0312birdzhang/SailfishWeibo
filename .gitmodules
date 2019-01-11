@@ -3,7 +3,3 @@
 	url = https://github.com/SunRain/QSinaWeiboApi.git
 	branch = NewStyle
 	
-[submodule "WeiboPyModule"]
-	path = WeiboPyModule
-	url = https://github.com/SunRain/SailfishWeiboPyModule.git
-	branch = master
