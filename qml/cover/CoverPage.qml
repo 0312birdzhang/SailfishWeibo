@@ -32,9 +32,9 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 
 CoverBackground {
-
+    allowResize: true
     CoverPlaceholder{
-        icon.source: Qt.resolvedUrl("file:////usr/share/icons/hicolor/86x86/apps/harbour-sailfish_sinaweibo.png")
+        icon.source: "image://theme/harbour-sailfish_sinaweibo.png"
         icon.height: parent.width / 2.5
         icon.width: parent.width / 2.5
         text: qsTr("Weibo")

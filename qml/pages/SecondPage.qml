@@ -122,6 +122,19 @@ Page {
                 color: Theme.highlightColor
             }
 
+
+            SectionHeader{
+                text: qsTr("Logout")
+            }
+
+            Button{
+                text: qsTr("Logout")
+                onClicked: {
+                    wbFunc.weiboLogout();
+                }
+            }
+
+
             OptionItem {
                 id:optionItem
                 width: parent.width

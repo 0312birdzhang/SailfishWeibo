@@ -31,10 +31,19 @@ WBPage {
         }
         PullDownMenu {
             id:weiboTabPullDownMenu
-            MenuItem {
-                text: qsTr("Logout")
+//            MenuItem {
+//                text: qsTr("Logout")
+//                onClicked: {
+//                    wbFunc.weiboLogout();
+//                }
+//            }
+            MenuItem{
+                text: qsTr("Refresh")
                 onClicked: {
-                    wbFunc.weiboLogout();
+                    if (toolBar.popuped)
+                        groupItem.fetchGroups();
+                    else
+                        weiboTab.refresh();
                 }
             }
         }
