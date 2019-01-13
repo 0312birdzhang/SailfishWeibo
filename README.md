@@ -15,16 +15,21 @@
 `git submodule update --init --recursive`
 
 ### 安装依赖
+
+```
+ssh -i ~/SailfishOS/vmshare/ssh/private_keys/engine/mersdk -p2222 mersdk@127.0.0.1
+```
+
 #### Arm:
 ```
-sb2 -t SailfishOS-3.0.0.8-armv7hl -m sdk-install -R zypper ar -f https://sailfish.openrepos.net/birdzhang/personal-main.repo openrepos-birdzhang
-sb2 -t SailfishOS-3.0.0.8-armv7hl -m sdk-install -R zypper ref openrepos-birdzhang
+sb2 -t SailfishOS-3.0.0.8-armv7hl -m sdk-install -R zypper ar -f https://sailfish.openrepos.net/birdzhang/personal-main.repo
+sb2 -t SailfishOS-3.0.0.8-armv7hl -m sdk-install -R zypper ref
 sb2 -t SailfishOS-3.0.0.8-armv7hl -m sdk-install -R zypper in htmlcxx htmlcxx-devel
 ```
 #### X86
 ```
-sb2 -t SailfishOS-3.0.0.8-i486 -m sdk-install -R zypper ar -f https://sailfish.openrepos.net/birdzhang/personal-main.repo openrepos-birdzhang
-sb2 -t SailfishOS-3.0.0.8-i486 -m sdk-install -R zypper ref openrepos-birdzhang
+sb2 -t SailfishOS-3.0.0.8-i486 -m sdk-install -R zypper ar -f https://sailfish.openrepos.net/birdzhang/personal-main.repo
+sb2 -t SailfishOS-3.0.0.8-i486 -m sdk-install -R zypper ref
 sb2 -t SailfishOS-3.0.0.8-i486 -m sdk-install -R zypper in htmlcxx htmlcxx-devel
 ```
 
